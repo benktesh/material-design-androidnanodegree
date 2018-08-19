@@ -1,5 +1,4 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -7,7 +6,9 @@
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        style="@style/Background_Style"
+        >
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view"
@@ -15,35 +16,36 @@
             android:layout_height="match_parent"
             android:clipToPadding="false"
             android:scrollbarStyle="outsideOverlay"
-            android:paddingTop="116dp"
+            android:paddingTop="@dimen/list_top_margin"
             android:paddingLeft="@dimen/list_side_margin"
             android:paddingRight="@dimen/list_side_margin"
-            android:paddingBottom="28dp" />
+            android:paddingBottom="@dimen/list_bottom_margin" />
     </android.support.v4.widget.SwipeRefreshLayout>
 
     <FrameLayout
         android:id="@+id/toolbar_container"
         android:layout_width="match_parent"
-        android:layout_height="112dp"
-        android:background="?colorPrimary"
-        android:elevation="8dp">
+        android:layout_height="@dimen/tool_height"
+        android:background="@color/theme_primary_dark"
+        android:elevation="@dimen/elev_1">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
-            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_marginTop="@dimen/list_toolbar_top_margin"
             android:layout_marginLeft="@dimen/list_toolbar_side_margin"
             android:layout_marginRight="@dimen/list_toolbar_side_margin"
             android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            android:layout_gravity="bottom">
+            android:layout_height="@dimen/actionBarSize"
+            android:layout_gravity="top">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
                 android:src="@drawable/logo"
                 android:contentDescription="@string/app_name" />
 
         </android.support.v7.widget.Toolbar>
     </FrameLayout>
 
-</FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

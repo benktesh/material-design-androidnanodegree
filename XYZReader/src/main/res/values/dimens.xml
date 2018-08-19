@@ -7,5 +7,11 @@
     <dimen name="fab_elevation">2dp</dimen>
     <dimen name="fab_press_translation_z">6dp</dimen>
     <dimen name="fab_margin">24dp</dimen>
+    <dimen name="actionBarSize">32dp</dimen>
+    <dimen name="list_top_margin">68dp</dimen>
+    <dimen name="list_bottom_margin">28dp</dimen>
+    <dimen name="tool_height">60dp</dimen>
+    <dimen name="elev_1">8dp</dimen>
+    <dimen name="list_toolbar_top_margin">16dp</dimen>
 
 </resources>
