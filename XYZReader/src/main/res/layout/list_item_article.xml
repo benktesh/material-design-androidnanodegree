@@ -17,8 +17,9 @@
         <!--suppress AndroidLintContentDescription -->
         <com.example.xyzreader.ui.DynamicHeightNetworkImageView
             android:id="@+id/thumbnail"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
             android:background="@color/photo_placeholder" />
 
         <TextView
@@ -26,11 +27,12 @@
             style="@style/TextAppearance.AppCompat.Subhead"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="16dp"
-            android:paddingTop="16dp"
-            android:paddingRight="16dp"
-            android:paddingBottom="4dp"
-            android:textColor="@color/text_gray"
+            android:paddingLeft="@dimen/padding_1"
+            android:paddingTop="@dimen/padding_1"
+            android:paddingRight="@dimen/padding_1"
+            android:paddingBottom="@dimen/padding_025"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/list_title_size"
             android:ellipsize="end"
             android:maxLines="4" />
 
@@ -39,10 +41,10 @@
             style="@style/TextAppearance.AppCompat.Body1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingBottom="16dp"
-            android:textColor="@color/text_black"
+            android:padding="16dp"
+            android:paddingRight="@dimen/padding_1"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/list_secondary_title"
             android:maxLines="2"
             android:ellipsize="end"
             />
