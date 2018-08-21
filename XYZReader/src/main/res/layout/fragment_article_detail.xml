@@ -24,7 +24,7 @@
             <ImageView
                 android:id="@+id/photo"
                 android:layout_width="match_parent"
-                android:layout_height="196dp"
+                android:layout_height="@dimen/detailed_view_top_height"
                 android:contentDescription="@string/content_description_article"
                 android:scaleType="centerCrop"
                 android:transitionName="@string/transition"
@@ -33,7 +33,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="196dp"
+                android:layout_height="@dimen/detailed_view_top_height"
                 android:background="@drawable/photo_background_protection" />
 
             <android.support.v7.widget.Toolbar

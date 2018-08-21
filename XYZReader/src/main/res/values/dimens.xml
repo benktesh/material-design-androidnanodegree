@@ -32,5 +32,6 @@
     <dimen name="margin_1">8dp</dimen>
     <dimen name="margin_4">32dp</dimen>
     <dimen name="marging_6">48dp</dimen>
+    <dimen name="detailed_view_top_height">196dp</dimen>
 
 </resources>
