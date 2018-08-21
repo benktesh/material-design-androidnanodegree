@@ -11,11 +11,26 @@
     <dimen name="list_top_margin">68dp</dimen>
     <dimen name="list_bottom_margin">16dp</dimen>
     <dimen name="tool_height">60dp</dimen>
-    <dimen name="elev_1">8dp</dimen>
+
     <dimen name="list_toolbar_top_margin">16dp</dimen>
     <dimen name="padding_1">16dp</dimen>
     <dimen name="padding_025">4dp</dimen>
     <dimen name="list_title_size">16sp</dimen>
     <dimen name="list_secondary_title">14sp</dimen>
+
+    <!-- Elevation
+        A default is 1dp, .5xis 4p, x is 8dp, and 2x is 16dp. The list will expands as needed.
+        Since we can't have . in name, 0 is really dot.
+    -->
+
+    <dimen name="elevation_05">4dp</dimen>
+    <dimen name="elevation_00">1dp</dimen>
+    <dimen name="elevation_1">8dp</dimen>
+    <dimen name="elevation_2">16dp</dimen>
+    <dimen name="detailed_image_height">196dp</dimen>
+    <dimen name="fab">56dp</dimen>
+    <dimen name="margin_1">8dp</dimen>
+    <dimen name="margin_4">32dp</dimen>
+    <dimen name="marging_6">48dp</dimen>
 
 </resources>
