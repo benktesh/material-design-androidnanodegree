@@ -11,6 +11,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.ShareCompat;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -187,6 +188,7 @@ public class ArticleDetailFragment extends Fragment implements
             mRootView.animate().alpha(1);
 
             mCollapsingToolbar.setTitle(mCursor.getString(ArticleLoader.Query.TITLE));
+            mCollapsingToolbar.setCollapsedTitleTextColor(ResourcesCompat.getColor(getResources(), R.color.collapse_title, null));
             subTitleView.setText("by " + mCursor.getString(ArticleLoader.Query.AUTHOR));
 
 
@@ -252,9 +254,11 @@ replace with picasso
 
         mCursor = cursor;
         if (mCursor != null && !mCursor.moveToFirst()) {
-            Log.e(TAG, "Error reading item detail cursor");
+            Log.e(TAG, "On Load Finished: Error reading item detail cursor");
+            //must return otherwise view will have null to display
             mCursor.close();
             mCursor = null;
+            return;
         }
 
         bindViews();
