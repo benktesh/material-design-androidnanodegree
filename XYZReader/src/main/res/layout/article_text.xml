@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/longtext_view"
-    style="@style/detailed_text_view"
+    style="@style/detailed_text_style"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier"
     android:orientation="vertical"
-    android:textSize="@dimen/detail_body_text_size" />
+    />

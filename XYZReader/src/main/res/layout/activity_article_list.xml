@@ -8,8 +8,7 @@
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        style="@style/Background_Style"
-        >
+        style="@style/nested_style">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view"
@@ -27,8 +26,8 @@
         android:id="@+id/toolbar_container"
         android:layout_width="match_parent"
         android:layout_height="@dimen/tool_height"
-        android:background="@color/theme_primary_dark"
-        android:elevation="@dimen/elevation_1">
+        android:elevation="@dimen/elevation_1"
+        style="@style/main_style">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"

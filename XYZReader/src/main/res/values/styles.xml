@@ -25,12 +25,24 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
-    <style name="Background_Style">
+    <style name="nested_style">
         <item name="android:background">#f6f6f7</item>
     </style>
 
-    <style name="detailed_text_view">
+    <style name="main_style">
+        <item name="android:background">@color/theme_primary_dark</item>
+
+    </style>
+
+    <style name="detailed_text_style">
         <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/detail_body_text_size</item>
+    </style>
+
+    <style name="detailed_subtitle_style">
+        <item name="android:textSize">@dimen/detailed_subtitle_textSize</item>
+        <item name="android:textColor">@android:color/white</item>
+
     </style>
 
 
