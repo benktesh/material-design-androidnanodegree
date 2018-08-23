@@ -37,5 +37,6 @@
     <dimen name="margin_2">16dp</dimen>
     <dimen name="margin_7">56dp</dimen>
     <dimen name="margin_8">64dp</dimen>
+    <dimen name="margin_0">0dp</dimen>
 
 </resources>
