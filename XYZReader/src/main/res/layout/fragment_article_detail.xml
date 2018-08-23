@@ -15,6 +15,7 @@
             android:id="@+id/collapsing_toolbar_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginStart="48dp"
             app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
@@ -30,6 +31,19 @@
                 android:transitionName="@string/transition"
                 app:layout_collapseMode="parallax"
                 app:layout_collapseParallaxMultiplier=".7" />
+            <TextView
+                android:id="@+id/author_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/author_name"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="@dimen/margin_1"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:layout_marginStart="@dimen/margin_6"
+                app:layout_collapseMode="parallax"
+                android:layout_gravity="bottom"
+                />
+
 
             <View
                 android:layout_width="match_parent"
@@ -40,10 +54,13 @@
                 android:id="@+id/tool_bar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="@dimen/margin_1"
+                android:layout_marginTop="@dimen/margin_1"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                app:contentInsetStart="32dp"
-                app:layout_collapseMode="pin" />
+                app:theme="@style/ToolbarTheme"
+                app:contentInsetStart="@dimen/margin_4"
+                app:layout_collapseMode="pin"
+                />
 
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>

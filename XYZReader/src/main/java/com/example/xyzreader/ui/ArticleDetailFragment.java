@@ -18,6 +18,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
@@ -46,6 +47,7 @@ public class ArticleDetailFragment extends Fragment implements
     private Cursor mCursor;
     private long mItemId;
     private View mRootView;
+
     private ObservableScrollView mScrollView;
     private DrawInsetsFrameLayout mDrawInsetsFrameLayout;
     private ColorDrawable mStatusBarColorDrawable;
@@ -60,6 +62,7 @@ public class ArticleDetailFragment extends Fragment implements
 
     private RecyclerView mRecyclerView;
     private CollapsingToolbarLayout mCollapsingToolbar;
+    private TextView subTitleView;
 
 
     private final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.sss");
@@ -115,6 +118,7 @@ public class ArticleDetailFragment extends Fragment implements
         mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
         mRecyclerView = mRootView.findViewById(R.id.article_body);
         mPhotoView = mRootView.findViewById(R.id.photo);
+        subTitleView = mRootView.findViewById(R.id.author_name);
 
         mRootView.findViewById(R.id.share_fab).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -183,6 +187,10 @@ public class ArticleDetailFragment extends Fragment implements
             mRootView.animate().alpha(1);
 
             mCollapsingToolbar.setTitle(mCursor.getString(ArticleLoader.Query.TITLE));
+            subTitleView.setText("by " + mCursor.getString(ArticleLoader.Query.AUTHOR));
+
+
+
             List<String> articleLines = new ArrayList<>();
             articleLines.add("\n");
             articleLines.addAll(new ArrayList<>(Arrays.asList(mCursor.getString(ArticleLoader.Query.BODY).split("\\r?\\n"))));

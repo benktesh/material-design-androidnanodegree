@@ -31,7 +31,11 @@
     <dimen name="fab">56dp</dimen>
     <dimen name="margin_1">8dp</dimen>
     <dimen name="margin_4">32dp</dimen>
-    <dimen name="marging_6">48dp</dimen>
+    <dimen name="margin_6">48dp</dimen>
     <dimen name="detailed_view_top_height">196dp</dimen>
+    <dimen name="author_name">16sp</dimen>
+    <dimen name="margin_2">16dp</dimen>
+    <dimen name="margin_7">56dp</dimen>
+    <dimen name="margin_8">64dp</dimen>
 
 </resources>
