@@ -14,3 +14,5 @@ https://stackoverflow.com/questions/5271387/get-color-int-from-color-resource
 Html Formatting about line issues:
 Slack and followig url
 https://stackoverflow.com/questions/2116162/how-to-display-html-in-textview
+
+Ready for Submission
