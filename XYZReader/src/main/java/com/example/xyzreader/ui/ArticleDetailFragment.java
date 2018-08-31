@@ -160,7 +160,7 @@ public class ArticleDetailFragment extends Fragment implements
 
             mCollapsingToolbar.setTitle(mCursor.getString(ArticleLoader.Query.TITLE));
             mCollapsingToolbar.setCollapsedTitleTextColor(ResourcesCompat.getColor(getResources(), R.color.collapse_title, null));
-            subTitleView.setText(getString(R.string.prefixAuthor) + mCursor.getString(ArticleLoader.Query.AUTHOR));
+            subTitleView.setText(String.format("%s%s", getString(R.string.prefixAuthor), mCursor.getString(ArticleLoader.Query.AUTHOR)));
 
 
 
