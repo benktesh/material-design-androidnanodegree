@@ -3,6 +3,8 @@ package com.example.xyzreader.ui;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
+import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,7 +61,11 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
 
         void bind(int listIndex) {
             String text = mArticleList.get(listIndex);
-            articleLongTextView.setText(text);
+            //Log.d("ArticleAdapter", text);
+            Spanned modifiedText;
+            modifiedText = Html.fromHtml(text, Html.FROM_HTML_MODE_LEGACY);
+            //Log.d("ArticleAdapter", modifiedText.toString() );
+            articleLongTextView.setText(modifiedText);
         }
     }
 }

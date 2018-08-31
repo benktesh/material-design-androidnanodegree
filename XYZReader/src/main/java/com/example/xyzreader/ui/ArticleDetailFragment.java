@@ -195,7 +195,11 @@ public class ArticleDetailFragment extends Fragment implements
 
             List<String> articleLines = new ArrayList<>();
             articleLines.add("\n");
-            articleLines.addAll(new ArrayList<>(Arrays.asList(mCursor.getString(ArticleLoader.Query.BODY).split("\\r?\\n"))));
+            //Log.d(TAG, mCursor.getString(ArticleLoader.Query.BODY));
+            articleLines.addAll(new ArrayList<>(Arrays
+                    .asList(mCursor.getString(ArticleLoader.Query.BODY)
+                           // .split("\\r?\\n")
+                    )));
 
             ArticleAdapter adapter = new ArticleAdapter(articleLines);
             mRecyclerView.setAdapter(adapter);
