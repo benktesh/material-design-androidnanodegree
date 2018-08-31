@@ -2,12 +2,15 @@
 
 This repository stores the starter code for the XYZ Reader project in Udacity's Android Nanodegree.
 
-Collapsing laout with subtitle
+Collapsing layout with subtitle
 https://github.com/HendraAnggrian/collapsingtoolbarlayout-subtitle
 
 Centralize the arrow:
 https://stackoverflow.com/questions/29890861/how-to-center-toolbar-back-button
 
-Colors fro resources:
+Colors for resources:
 https://stackoverflow.com/questions/5271387/get-color-int-from-color-resource
 
+Html Formatting about line issues:
+Slack and followig url
+https://stackoverflow.com/questions/2116162/how-to-display-html-in-textview
