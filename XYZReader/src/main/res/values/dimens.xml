@@ -29,5 +29,6 @@
     <dimen name="detailed_subtitle_textSize">16sp</dimen>
     <dimen name="margin_8">64dp</dimen>
     <dimen name="margin_0">0dp</dimen>
+    <dimen name="elevation_05">4dp</dimen>
 
 </resources>
