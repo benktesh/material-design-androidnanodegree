@@ -30,5 +30,6 @@
     <dimen name="margin_8">64dp</dimen>
     <dimen name="margin_0">0dp</dimen>
     <dimen name="elevation_05">4dp</dimen>
+    <dimen name="elevation_00">1dp</dimen>
 
 </resources>
