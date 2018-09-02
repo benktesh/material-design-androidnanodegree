@@ -18,3 +18,14 @@ https://stackoverflow.com/questions/2116162/how-to-display-html-in-textview
 Ready for Submission
 
 Reviewed. Updated code to account for elevations and coloring. Ready for re-submission.
+
+
+Resubmitted project was returned with the following comment:
+Looks like you didn't make all of the required changes. Make sure to read the previous review really carefully and make all of them. Resubmit your project when you are ready. Thanks!
+
+The original reivewer had following requirements:
+    According to Material Design Guidelines, AppBar elevation is 4dp.
+    You need to add consistent color theme here.
+    According to Material Design Guidelines, FAB elevation is 6dp.
+    Missing elevation attribute for CardView.
+
