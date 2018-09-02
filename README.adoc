@@ -16,3 +16,5 @@ Slack and followig url
 https://stackoverflow.com/questions/2116162/how-to-display-html-in-textview
 
 Ready for Submission
+
+Reviewed. Updated code to account for elevations and coloring. Ready for re-submission.
