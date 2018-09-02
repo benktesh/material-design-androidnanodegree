@@ -8,7 +8,8 @@
     android:elevation="@dimen/elevation_00"
     android:clickable="true"
     android:focusable="true"
-    android:foreground="?selectableItemBackground">
+    android:foreground="?selectableItemBackground"
+>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,28 +26,22 @@
 
         <TextView
             android:id="@+id/article_title"
-            style="@style/TextAppearance.AppCompat.Subhead"
+            style="@style/article_title_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/padding_1"
             android:paddingTop="@dimen/padding_1"
             android:paddingRight="@dimen/padding_1"
             android:paddingBottom="@dimen/padding_025"
-            android:textColor="@color/text_main_title"
-            android:textSize="@dimen/list_title_size"
-            android:ellipsize="end"
             android:maxLines="4" />
 
         <TextView
             android:id="@+id/article_subtitle"
-            style="@style/TextAppearance.AppCompat.Body1"
+            style="@style/article_subtitle_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:textColor="@color/text_gray"
-            android:textSize="@dimen/list_secondary_title"
             android:maxLines="2"
-            android:ellipsize="end"
             />
     </LinearLayout>
 

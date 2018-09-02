@@ -1,13 +1,39 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_height"
+        android:elevation="@dimen/elevation_1"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_marginTop="@dimen/list_toolbar_top_margin"
+            android:layout_marginLeft="@dimen/list_toolbar_side_margin"
+            android:layout_marginRight="@dimen/list_toolbar_side_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionBarSize"
+            android:layout_gravity="top"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/app_name" />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        style="@style/nested_style">
+      >
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view"
@@ -21,29 +47,6 @@
             android:paddingBottom="@dimen/list_bottom_margin" />
     </android.support.v4.widget.SwipeRefreshLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/tool_height"
-        android:elevation="@dimen/elevation_1"
-        style="@style/main_style">
 
-        <android.support.v7.widget.Toolbar
-
-            android:layout_marginTop="@dimen/list_toolbar_top_margin"
-            android:layout_marginLeft="@dimen/list_toolbar_side_margin"
-            android:layout_marginRight="@dimen/list_toolbar_side_margin"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/actionBarSize"
-            android:layout_gravity="top">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scaleType="centerCrop"
-                android:src="@drawable/logo"
-                android:contentDescription="@string/app_name" />
-
-        </android.support.v7.widget.Toolbar>
-    </FrameLayout>
 
 </android.support.design.widget.CoordinatorLayout>

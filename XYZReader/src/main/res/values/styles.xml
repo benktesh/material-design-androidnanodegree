@@ -19,14 +19,30 @@
 
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
 
+        <item name="colorPrimaryDark">@color/theme_primary_dark</item>
+        <item name="colorPrimary">@color/theme_primary</item>
+        <item name="colorAccent">@color/theme_accent</item>
     </style>
 
-    <style name="nested_style">
-        <item name="android:background">#f6f6f7</item>
+    <style name="main_style" parent="Theme.Bacon">
+        <item name="android:background">@android:color/transparent</item>
     </style>
 
-    <style name="main_style">
-        <item name="android:background">@color/theme_primary_dark</item>
+    <style name="nested_style" parent="main_style">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="article_title_style" parent="@style/TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@color/text_main_title</item>
+        <item name="android:textSize">@dimen/list_title_size</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="article_subtitle_style" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">@dimen/list_secondary_title</item>
+        <item name="android:ellipsize">end</item>
 
     </style>
 
@@ -38,8 +54,8 @@
     <style name="detailed_subtitle_style">
         <item name="android:textSize">@dimen/detailed_subtitle_textSize</item>
         <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@android:color/transparent</item>
 
     </style>
-
 
 </resources>
