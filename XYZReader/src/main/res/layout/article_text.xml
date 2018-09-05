@@ -5,5 +5,4 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier"
-    android:orientation="vertical"
-    />
+    android:orientation="vertical" />
