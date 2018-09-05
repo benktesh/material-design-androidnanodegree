@@ -163,13 +163,12 @@ public class ArticleDetailFragment extends Fragment implements
             subTitleView.setText(String.format("%s%s", getString(R.string.prefixAuthor), mCursor.getString(ArticleLoader.Query.AUTHOR)));
 
 
-
             List<String> articleLines = new ArrayList<>();
             articleLines.add("\n");
             //Log.d(TAG, mCursor.getString(ArticleLoader.Query.BODY));
             articleLines.addAll(new ArrayList<>(Arrays
                     .asList(mCursor.getString(ArticleLoader.Query.BODY)
-                           // .split("\\r?\\n")
+                            // .split("\\r?\\n")
                     )));
 
             ArticleAdapter adapter = new ArticleAdapter(articleLines);

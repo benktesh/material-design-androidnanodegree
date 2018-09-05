@@ -29,3 +29,5 @@ The original reivewer had following requirements:
     According to Material Design Guidelines, FAB elevation is 6dp.
     Missing elevation attribute for CardView.
 
+Somehow missed to notice the elevation for main activity's app bar layout. Initially it was a framedlayout. Updated based on reviewer's comment. Ready for submission.
+
