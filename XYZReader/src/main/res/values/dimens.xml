@@ -21,15 +21,16 @@
         A default is 1dp, .5xis 4p, x is 8dp, and 2x is 16dp. The list will expands as needed.
         Since we can't have . in name, 0 is really dot.
     -->
-
+    <dimen name="elevation_00">1dp</dimen>
+    <dimen name="elevation_05">4dp</dimen>
     <dimen name="elevation_1">8dp</dimen>
+
     <dimen name="margin_1">8dp</dimen>
     <dimen name="margin_6">48dp</dimen>
     <dimen name="detailed_view_top_height">196dp</dimen>
     <dimen name="detailed_subtitle_textSize">16sp</dimen>
     <dimen name="margin_8">64dp</dimen>
     <dimen name="margin_0">0dp</dimen>
-    <dimen name="elevation_05">4dp</dimen>
-    <dimen name="elevation_00">1dp</dimen>
+
 
 </resources>
